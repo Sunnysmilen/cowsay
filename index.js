@@ -1,12 +1,12 @@
 import cowsay from "cowsay";
 
-require("dotenv").config();
-
 const cowsay = require("cowsay");
-const message = process.env.MESSAGE;
+const name = process.env.NAME;
+const campus = process.env.CAMPUS;
+
 console.log(
   cowsay.say({
-    text: message,
+    text: `Hello I'm ${name} from ${campus}`,
     e: "oO",
     T: "U ",
   })
